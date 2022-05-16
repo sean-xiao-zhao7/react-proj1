@@ -1,9 +1,12 @@
-export default function ExpenseItem() {
+import "./ExpenseItem.scss";
+import ExpenseDate from "./ExpenseDate";
+
+export default function ExpenseItem(props) {
     return (
-        <div>
-            <div>Date</div>
-            <h2>Title</h2>
-            <div>Amount</div>
+        <div className="expense-item">
+            <ExpenseDate date={props.date} />
+            <h2 className="expense-item__heading">{props.title}</h2>
+            <div className="expense-item__price">$ {props.price}</div>
         </div>
     );
 }

@@ -1,0 +1,28 @@
+@use '../sass/colors'as colors;
+
+.expense-item {
+    display: grid;
+    grid-template-columns: [full-start] 20% [title-start]1fr[title-end] 20% [full-end];
+    grid-column-gap: 3rem;
+    font-size: 2rem;
+    border: solid 1.5px colors.$primary;
+
+    &__date,
+    &__heading,
+    &__price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__date,
+    &__price {
+        background-color: colors.$primary;
+        padding: 1rem 2rem;
+        color: colors.$white;
+    }
+
+    &__price {
+        font-size: 3rem;
+    }
+}
