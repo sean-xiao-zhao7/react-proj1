@@ -1,0 +1,27 @@
+@use "./fonts"as fonts;
+@use "./colors"as colors;
+@use "./typography"as typography;
+
+button {
+    display: block;
+    border: 0;
+    font-family: fonts.$text-font;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    padding: 1.2rem 2rem;
+    justify-self: center;
+    background-color: colors.$secondary;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.1s;
+
+    &:hover {
+        transform: translateY(-0.2rem);
+        box-shadow: typography.$box-shadow-light;
+    }
+}
+
+.form-control {
+    
+}

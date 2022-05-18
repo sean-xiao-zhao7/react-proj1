@@ -2,6 +2,7 @@ import "./sass/App.scss";
 
 // components
 import ExpenseItem from "./components/ExpenseItem";
+import NewExpense from "./components/NewExpense";
 
 function App() {
     const expenses = [
@@ -37,6 +38,8 @@ function App() {
                     key={e.date + e.title}
                 ></ExpenseItem>
             ))}
+            <h1>Add a new expense</h1>
+            <NewExpense />
         </div>
     );
 }

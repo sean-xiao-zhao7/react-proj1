@@ -1,4 +1,6 @@
 @use '../sass/colors'as colors;
+$margin-small: 0.5rem;
+$box-shadow-light: 0 0.3rem 0.7rem rgb(145, 145, 145);
 
 h1 {
     text-align: center;
@@ -10,4 +12,8 @@ h2 {
     font-size: 1.8rem;
     font-weight: 400;
     color: colors.$dark;
+}
+
+.margin-small {
+    margin: $margin-small;
 }
