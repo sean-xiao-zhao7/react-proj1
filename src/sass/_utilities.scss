@@ -22,6 +22,31 @@ button {
     }
 }
 
+form {
+    display: grid;
+    grid-row-gap: 1rem;
+    padding: 0 15%;
+}
+
 .form-control {
-    
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-column-gap: 2rem;
+    align-items: center;
+
+    label {
+        font-size: 1.6rem;
+        justify-self: end;
+        display: block;
+        color: colors.$primary;
+    }
+
+    input {
+        border: 1px solid colors.$primary;
+        border-radius: 3px;
+        padding: 1rem;
+        font-size: 1.7rem;
+        font-family: fonts.$text-font;
+        font-weight: 300;
+    }
 }
